@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp-net-core-crud", "asp-net-core-crud\asp-net-core-crud.csproj", "{E4540F97-3CC8-4C44-B97A-58D33ABA6F6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp_net_core_crud", "asp-net-core-crud\asp_net_core_crud.csproj", "{E4540F97-3CC8-4C44-B97A-58D33ABA6F6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
