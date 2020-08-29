@@ -1,6 +1,6 @@
 using System;
 
-namespace asp_net_core_crud.Models
+namespace asp_net_core_crud.Models.ViewModels
 {
     public class ErrorViewModel
     {
