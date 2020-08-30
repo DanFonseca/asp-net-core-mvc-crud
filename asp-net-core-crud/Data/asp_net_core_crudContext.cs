@@ -14,6 +14,9 @@ namespace asp_net_core_crud.Data
         {
         }
 
-        public DbSet<asp_net_core_crud.Models.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
+        
     }
 }
