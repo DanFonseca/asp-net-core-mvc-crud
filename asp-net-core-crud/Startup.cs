@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using asp_net_core_crud.Data;
+using asp_net_core_crud.Models.Services;
 
 namespace asp_net_core_crud
 {
@@ -39,13 +40,17 @@ namespace asp_net_core_crud
             services.AddDbContext<asp_net_core_crudContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("asp_net_core_crudContext"), builder =>
                     builder.MigrationsAssembly("asp_net_core_crud")));
+
+            //Registrando um servico
+            services.AddScoped<SeedService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedService seed)
         {
             if (env.IsDevelopment())
             {
+                seed.Seed();
                 app.UseDeveloperExceptionPage();
             }
             else

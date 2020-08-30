@@ -2,8 +2,8 @@
 {
     public enum SaleStatus
     {
-        PENDING,
-        BILLED,
-        CANCELD
+        Billed,
+        Pending,
+        Canceled
     }
 }
