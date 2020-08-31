@@ -9,14 +9,16 @@ namespace asp_net_core_crud.Data
 {
     public class asp_net_core_crudContext : DbContext
     {
-        public asp_net_core_crudContext (DbContextOptions<asp_net_core_crudContext> options)
-            : base(options)
-        {
-        }
 
         public DbSet<Department> Department { get; set; }
         public DbSet<Seller> Seller { get; set; }
         public DbSet<SalesRecord> SalesRecord { get; set; }
+
+
+        public asp_net_core_crudContext(DbContextOptions<asp_net_core_crudContext> options)
+            : base(options)
+        {
+        }
         
     }
 }

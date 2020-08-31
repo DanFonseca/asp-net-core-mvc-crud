@@ -43,6 +43,8 @@ namespace asp_net_core_crud
 
             //Registrando um servico
             services.AddScoped<SeedService>();
+            services.AddScoped<SellerService> ();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

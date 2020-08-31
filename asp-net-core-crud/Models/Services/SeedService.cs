@@ -6,7 +6,7 @@ namespace asp_net_core_crud.Models.Services
 {
     public class SeedService
     {
-        private asp_net_core_crudContext _context;
+        private readonly asp_net_core_crudContext _context;
 
         public SeedService(asp_net_core_crudContext context)
         {
