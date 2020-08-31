@@ -20,5 +20,11 @@ namespace asp_net_core_crud.Models.Services
         {
             return _context.Seller.ToList();
         }
+
+        public void insert (Seller seller)
+        {
+            _context.Add(seller);
+            _context.SaveChanges();
+        }
     }
 }
