@@ -14,6 +14,9 @@ namespace asp_net_core_crud.Models
 
         public Department Department { get; set; }
 
+        //Foreign Key de Departament
+        public int DepartmentId { get; set; } 
+
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
         public Seller(int id, string name, string email, DateTime birthDate,

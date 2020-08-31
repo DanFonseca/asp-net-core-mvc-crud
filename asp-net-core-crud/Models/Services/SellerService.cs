@@ -23,6 +23,7 @@ namespace asp_net_core_crud.Models.Services
 
         public void insert (Seller seller)
         {
+            seller.DepartmentId = 1;
             _context.Add(seller);
             _context.SaveChanges();
         }

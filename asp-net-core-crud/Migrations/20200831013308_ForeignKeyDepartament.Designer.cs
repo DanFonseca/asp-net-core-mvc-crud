@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using asp_net_core_crud.Data;
 
 namespace asp_net_core_crud.Migrations
 {
     [DbContext(typeof(asp_net_core_crudContext))]
-    partial class asp_net_core_crudContextModelSnapshot : ModelSnapshot
+    [Migration("20200831013308_ForeignKeyDepartament")]
+    partial class ForeignKeyDepartament
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
